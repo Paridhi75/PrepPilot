@@ -1,4 +1,4 @@
-# 📚 PrepPilot: AI-Powered Study Plan & Timetable Generator (C20)
+# 📚 PrepPilot - AI-Powered Personalized Study Plan Generator
 
 [![Course](https://img.shields.io/badge/Course-SCSE4041%20Prompt%20Engineering-indigo.svg)](https://www.bennett.edu.in)
 [![Problem ID](https://img.shields.io/badge/Problem%20ID-C20-blue.svg)]()
