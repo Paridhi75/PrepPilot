@@ -1,4 +1,4 @@
-# 📚 PromptCraft: AI-Powered Study Plan & Timetable Generator (C20)
+# 📚 PrepPilot: AI-Powered Study Plan & Timetable Generator (C20)
 
 [![Course](https://img.shields.io/badge/Course-SCSE4041%20Prompt%20Engineering-indigo.svg)](https://www.bennett.edu.in)
 [![Problem ID](https://img.shields.io/badge/Problem%20ID-C20-blue.svg)]()
@@ -7,7 +7,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.66-red.svg)](https://streamlit.io)
 [![Tests](https://img.shields.io/badge/Tests-8%20Passed-emerald.svg)]()
 
-> **Milestone 1, 2, and 3 Complete Implementation**  
+
 > An academic research and software mini-project demonstrating how **Constraint-Based Prompting**, **Structured Output (JSON Schema)**, and **Chain-of-Verification (Refined Workflow)** transform generative LLMs into reliable, mathematically bounded study timetable planners.
 
 ---
@@ -51,8 +51,8 @@
    - 4 pre-configured academic test cases (Staggered Semester, 4-Day Emergency Crunch, Asymmetric Schedule, Multi-Weak Subjects).
    - Generates interactive Plotly compliance bar charts, stacked violation breakdowns, and multidimensional capability radar charts.
 
-8. **Dual Execution Engine:**
-   - 🟢 **Live Google Gemini API:** Uses Google Gemini 2.5 Flash (`google-genai` SDK) when an API key is provided.
+8. **Execution Engine:**
+   
    - 💡 **Intelligent Academic Simulator:** 100% offline, deterministic engine that faithfully models LLM failure and success behaviors for all 4 prompt iterations during viva or offline evaluation.
 
 ---
@@ -80,9 +80,7 @@ prompt_pro/
 │   ├── test_validator.py      # Unit tests for constraint checks & scoring
 │   └── test_prompts.py        # Unit tests for prompt builders, simulation, & export
 └── docs/
-    ├── MILESTONE_1.md         # Milestone 1: Problem Identification & Proposal
-    ├── MILESTONE_2.md         # Milestone 2: Implementation & Evaluation
-    ├── MILESTONE_3.md         # Milestone 3: Final Report & Responsible AI
+    ├
     └── RESEARCH_SUMMARY.md    # Theoretical grounding citing Liu et al. (2026)
 ```
 
@@ -117,21 +115,14 @@ cd prompt_pro
 pip install -r requirements.txt
 ```
 
-### 3. (Optional) Configure Gemini API Key
-To run with live Google Gemini models:
-```bash
-# Copy template and add your API key from Google AI Studio
-copy .env.example .env
-```
-*(Alternatively, you can paste your key directly into the Streamlit sidebar at runtime, or run in Academic Simulation mode without any key).*
 
-### 4. Run the Streamlit Application
+### 3. Run the Streamlit Application
 ```bash
 python -m streamlit run app.py
 ```
 Open your browser at `http://localhost:8501`.
 
-### 5. Run Unit Tests
+### 4. Run Unit Tests
 ```bash
 python -m pytest tests/ -v
 ```
@@ -151,9 +142,3 @@ The meta-analysis of 31 empirical trials with 13,506 college students demonstrat
 
 ---
 
-## 👥 Team PromptCraft (SCSE4041)
-
-- **Team Leader & Documentation:** Coordination, Milestone 1–3 synthesis, academic literature review.
-- **Prompt Engineer:** Prompt crafting, few-shot tuning, Chain-of-Verification critic design.
-- **Software Developer:** Streamlit application, Pydantic schemas, iCalendar export engine.
-- **Validation & QA Engineer:** Python constraint-checking algorithms, unit testing, benchmark runner.
